@@ -141,8 +141,8 @@
         <div class="row">
             <div class="span12">
                 <div class="title-page">
-                    <h2 class="title">Our Work</h2>
-                    <h3 class="title-description">Check Out Our Projects on <a href="#">Dribbble</a>.</h3>
+                    <h2 class="title">Produtos</h2>
+                    <h3 class="title-description">Veja aguns de nossos produtos e navegue pelas categorias.</h3>
                 </div>
             </div>
         </div>
@@ -154,10 +154,10 @@
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Type of Work</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All Projects</a></li>
+                    	<li class="type-work">Categorias</li>
+                        <li><a href="#filter" data-option-value="*" class="selected">Todos</a></li>
                         <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Photography</a></li>
+                        <li><a href="#filter" data-option-value=".photography">Fotografia</a></li>
                         <li><a href="#filter" data-option-value=".video">Video</a></li>
                     </ul>
                 </nav>
@@ -294,8 +294,8 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">About Us</h2>
-                <h3 class="title-description">Learn About our Team &amp; Culture.</h3>
+                <h2 class="title">Sobre o Ateliê</h2>
+                <h3 class="title-description">Ateliê Susana Ribacki vestindo sonhos</h3>
             </div>
         </div>
     </div>
@@ -309,11 +309,11 @@
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">CTO/Founder</span>
+                    <span class="overlay-text-thumb">Estilista</span>
                 </div>
                 <img src="{% static 'core/img/profile/profile-01.jpg' %}" alt="John Doe">
             </div>
-            <h3 class="profile-name">John Doe</h3>
+            <h3 class="profile-name">Susana Ribacki</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             	
@@ -332,11 +332,11 @@
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Creative Director</span>
+                    <span class="overlay-text-thumb">Ateliê</span>
                 </div>
                 <img src="{% static 'core/img/profile/profile-02.jpg' %}" alt="Jane Helf">
             </div>
-            <h3 class="profile-name">Jane Helf</h3>
+            <h3 class="profile-name">O Ateliê</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             	
@@ -354,11 +354,11 @@
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
+                    <span class="overlay-text-thumb">Redes Sociais</span>
                 </div>
                 <img src="{% static 'core/img/profile/profile-03.jpg' %}" alt="Joshua Insanus">
             </div>
-            <h3 class="profile-name">Joshua Insanus</h3>
+            <h3 class="profile-name">Redes Sociais</h3>
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             	
@@ -387,8 +387,8 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-                <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
+                <h2 class="title">Contato</h2>
+                <h3 class="title-description">Envie seu pedido, sujestão, duvida e entraremos em contato.</h3>
             </div>
         </div>
     </div>
@@ -400,16 +400,19 @@
         
         	<form id="contact-form" class="contact-form" action="#">
             	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+            		<input id="contact_name" type="text" placeholder="Nome Completo" value="" name="name" />
                 </p>
                 <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+                	<input id="contact_email" type="text" placeholder="Email para contato" value="" name="email" />
+                </p>
+                <p class="contact-phone">
+                    <input id="contact_phone" type="text" placeholder="Telefone para contato" value="" name="phone" />
                 </p>
                 <p class="contact-message">
-                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+                	<textarea id="contact_message" placeholder="Sua Mensagem" name="message" rows="15" cols="40"></textarea>
                 </p>
                 <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">Send Your Email</a>
+                	<a id="contact-submit" class="submit" href="#">Envie sua mensagem :)</a>
                 </p>
                 
                 <div id="response">
@@ -421,16 +424,16 @@
         
         <div class="span3">
         	<div class="contact-details">
-        		<h3>Contact Details</h3>
+        		<h3>Detalhes do contato</h3>
                 <ul>
-                    <li><a href="#">hello@brushed.com</a></li>
-                    <li>(916) 375-2525</li>
+                    <li><a href="#">contato@susanaribacki.com.br</a></li>
+                    <li>(54) 9109-2084</li>
                     <li>
-                        Brushed Studio
+                        Ateliê Susana Ribacki
                         <br>
-                        5240 Vanish Island. 105
+                        Av. Júlio de Castilhos, 1021
                         <br>
-                        Unknow
+                        ao lado do Clube Guarany
                     </li>
                 </ul>
             </div>
@@ -442,7 +445,7 @@
 <!-- End Contact Section -->
 
 <!-- Twitter Feed -->
-<div id="twitter-feed" class="page-alternate">
+<!-- <div id="twitter-feed" class="page-alternate">
 	<div class="container">
     	<div class="row">
             <div class="span12">
@@ -455,7 +458,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- End Twitter Feed -->
 
 <!-- Socialize -->
@@ -465,15 +468,18 @@
             <div class="span12">
                 <nav id="social">
                     <ul>
-                        <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
+                        <li><a href="https://www.facebook.com/susana.ribacki" title="Siga-me no Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <!-- <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
                         <li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
                         <li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
                         <li><a href="http://www.behance.net/alessioatzeni" title="Follow Me on Behance" target="_blank"><span class="font-icon-social-behance"></span></a></li>
+                        
                         <li><a href="https://www.facebook.com/Bluxart" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        
                         <li><a href="https://plus.google.com/105500420878314068694" title="Follow Me on Google Plus" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
                         <li><a href="http://www.linkedin.com/in/alessioatzeni" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
                         <li><a href="http://themeforest.net/user/Bluxart" title="Follow Me on ThemeForest" target="_blank"><span class="font-icon-social-envato"></span></a></li>
-                        <li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li>
+                        <li><a href="http://zerply.com/Bluxart/public" title="Follow Me on Zerply" target="_blank"><span class="font-icon-social-zerply"></span></a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -484,7 +490,9 @@
 
 <!-- Footer -->
 <footer>
-	<p class="credits">&copy;2013 Brushed. <a href="http://themes.alessioatzeni.com/html/brushed/" title="Brushed | Responsive One Page Template">Brushed Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a></p>
+	<p class="credits">&copy;2014 Joelmir Ribacki.
+        <!-- <a href="http://themes.alessioatzeni.com/html/brushed/" title="Brushed | Responsive One Page Template">Brushed Template</a> by <a href="http://www.alessioatzeni.com/" title="Alessio Atzeni | Web Designer &amp; Front-end Developer">Alessio Atzeni</a> -->
+    </p>
 </footer>
 <!-- End Footer -->
 
