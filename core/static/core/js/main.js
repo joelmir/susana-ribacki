@@ -77,10 +77,10 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : 'static/core/img/slider-images/image01.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'static/core/img/slider-images/image02.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'static/core/img/slider-images/image03.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''},
-											{image : 'static/core/img/slider-images/image04.jpg', title : '<div class="slide-content">Brushed</div>', thumb : '', url : ''}  
+											{image : 'static/core/img/slider-images/image01.jpg', title : '<div class="slide-content">Em Breve...</div>', thumb : '', url : ''},
+											{image : 'static/core/img/slider-images/image02.jpg', title : '<div class="slide-content">coming soon...</div>', thumb : '', url : ''},
+											{image : 'static/core/img/slider-images/image03.jpg', title : '<div class="slide-content">à venir...</div>', thumb : '', url : ''},
+											{image : 'static/core/img/slider-images/image04.jpg', title : '<div class="slide-content">Em novembro</div>', thumb : '', url : ''}  
 									],
 									
 		// Theme Options			   
