@@ -166,6 +166,14 @@ BRUSHED.fancyBox = function(){
 				beforeShow: function () {
 					this.title = $(this.element).attr('title');
 					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
+					//Adiciona a galeria de imagens do produto
+					if($(this.element).parent().children('div.popup-gallery'))
+						this.title += '<div class="popup-gallery">' + $(this.element).parent().children('div.popup-gallery').html()+'</div>'
+
+				},
+				afterShow: function(){
+					console.log('magnificPopup')
+					$('.image-link').magnificPopup({type:'image'});
 				},
 				helpers : {
 					title : { type: 'inside' },
@@ -376,14 +384,14 @@ $(document).ready(function(){
 		test: Modernizr.placeholder,
 		nope: 'static/core/js/placeholder.js', 
 		complete : function() {
-				if (!Modernizr.placeholder) {
-						Placeholders.init({
-						live: true,
-						hideOnFocus: false,
-						className: "yourClass",
-						textColor: "#999"
-						});    
-				}
+				// if (!Modernizr.placeholder) {
+				// 		Placeholders.init{
+				// 		live: true,
+				// 		hideOnFocus: false,
+				// 		className: "yourClass",
+				// 		textColor: "#999"
+				// 		});    
+				// }
 		}
 	}
 	]);
