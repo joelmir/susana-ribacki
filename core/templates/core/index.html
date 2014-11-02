@@ -10,9 +10,9 @@
 <!-- Meta Tags -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Ateliê Susana Ribacki</title>   
+<title>Susana Ribacki Atelier</title>   
 
-<meta name="description" content="Ateliê Susana Ribacki" /> 
+<meta name="description" content="Susana Ribacki Atelier" /> 
 
 <!-- Mobile Specifics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -120,7 +120,7 @@
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Ateliê Susana Ribacki">
+        	<a id="goUp" href="#home-slider" title="Atelier Susana Ribacki">
                 Susana Ribacki
             </a>
         </div>
@@ -129,7 +129,7 @@
         	<ul id="menu-nav">
             	<li class="current"><a href="#home-slider">Inicio</a></li>
                 <li><a href="#work">Produtos</a></li>
-                <li><a href="#about">Sobre o Ateliê</a></li>
+                <li><a href="#about">Sobre o Atelier</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
@@ -146,7 +146,7 @@
             <div class="span12">
                 <div class="title-page">
                     <h2 class="title">Produtos</h2>
-                    <h3 class="title-description">Veja aguns de nossos produtos e navegue pelas categorias.</h3>
+                    <h3 class="title-description">Veja aguns de nossos produtos na galeria</h3>
                 </div>
             </div>
         </div>
@@ -154,7 +154,7 @@
         
         <!-- Portfolio Projects -->
         <div class="row">
-        	<div class="span3">
+        	<div class="span2" style="display:None">
             	<!-- Filter -->
                 <nav id="options" class="work-nav">
                     <ul id="filters" class="option-set" data-option-key="filter">
@@ -168,40 +168,205 @@
                 <!-- End Filter -->
             </div>
             
-            <div class="span9">
+            <div class="span12">
             	<div class="row">
                 	<section id="projects">
                     	<ul id="thumbs">
                         
 							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
+                        	<li class="item-thumbs span2 design">
                             	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Nome do Produto Aqui" href="{% static 'core/img/em_breve.jpg' %}">
+                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com renda aplicada" href="{% static 'core/produtos/0001.jpg' %}">
                                 	<span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
                                 <!-- Thumb Image and Description -->
-                                <img src="{% static 'core/img/em_breve.jpg' %}" alt="Descrição do produto aqui">
-                                <div class="popup-gallery" style="display:None">
+                                <img src="{% static 'core/produtos/0001.jpg' %}" alt="">
+                                <!-- <div class="popup-gallery" style="display:None">
                                     <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" class="image-link" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" height="75" width="75"></a>
                                     <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" class="image-link" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg" height="75" width="75"></a>
                                     <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" class="image-link" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg" height="75" width="75"></a>
                                     <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" class="image-link" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg" height="75" width="75"></a>
-                                </div>
+                                </div> -->
                             </li>
                         	<!-- End Item Project -->
 
-                            <!-- Item Project and Filter Name -->
-                            <li class="item-thumbs span3 design">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Nome do Produto Aqui" href="{% static 'core/img/em_breve.jpg' %}">
+                            
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0002.jpg' %}">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
                                 </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="{% static 'core/img/em_breve.jpg' %}" alt="Um teste de descrição">
+                                <img src="{% static 'core/produtos/0002.jpg' %}" alt="">
                             </li>
-                            <!-- End Item Project -->
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0003.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0003.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0004.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0004.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com renda aplicada" href="{% static 'core/produtos/0005.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0005.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com transparências" href="{% static 'core/produtos/0006.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0006.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de renda" href="{% static 'core/produtos/0007.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0007.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de renda" href="{% static 'core/produtos/0008.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0008.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com renda aplicada" href="{% static 'core/produtos/0009.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0009.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de paetês" href="{% static 'core/produtos/0010.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0010.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com renda aplicada" href="{% static 'core/produtos/0011.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0011.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0012.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0012.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0013.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0013.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0014.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0014.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com renda aplicada" href="{% static 'core/produtos/0015.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0015.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com renda aplicada" href="{% static 'core/produtos/0016.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0016.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de renda" href="{% static 'core/produtos/0017.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0017.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de renda" href="{% static 'core/produtos/0018.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0018.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido com renda aplicada" href="{% static 'core/produtos/0019.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0019.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0020.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0020.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0021.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0021.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de viscolycra" href="{% static 'core/produtos/0022.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0022.jpg' %}" alt="">
+                            </li>
+
+                            <li class="item-thumbs span2 design">
+                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Vestido de cotton e viscolycra" href="{% static 'core/produtos/0023.jpg' %}">
+                                    <span class="overlay-img"></span>
+                                    <span class="overlay-img-thumb font-icon-plus"></span>
+                                </a>
+                                <img src="{% static 'core/produtos/0023.jpg' %}" alt="">
+                            </li>
                             
                         </ul>
                     </section>
@@ -221,8 +386,8 @@
     <div class="row">
         <div class="span12">
             <div class="title-page">
-                <h2 class="title">Sobre o Ateliê</h2>
-                <h3 class="title-description">Ateliê Susana Ribacki vestindo sonhos</h3>
+                <h2 class="title">Sobre o Atelier</h2>
+                <h3 class="title-description">Atelier Susana Ribacki personalizando ao seu estilo</h3>
             </div>
         </div>
     </div>
@@ -232,7 +397,7 @@
     <div class="row">
     	
         <!-- Start Profile -->
-    	<div class="span4 profile">
+    	<!-- <div class="span6 profile">
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
@@ -244,40 +409,45 @@
             <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
             Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             	
-            <div class="social">
+            <!-- <div class="social">
             	<ul class="social-icons">
                 	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
                 </ul>
             </div>
-        </div>
+
+        </div> -->
         <!-- End Profile -->
-        
+        <div class="span3"></div>
         <!-- Start Profile -->
-    	<div class="span4 profile">
+    	<div class="span6 profile">
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Ateliê</span>
+                    <span class="overlay-text-thumb">Atelier</span>
                 </div>
                 <img src="{% static 'core/img/profile/profile-02.jpg' %}" alt="Jane Helf">
             </div>
-            <h3 class="profile-name">O Ateliê</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <h3 class="profile-name">O Atelier</h3>
+            <p class="profile-description">
+                Criamos peças novas todos os dias, além de coleções, pensando no bem estar, conforto e satisfação de mulheres contemporâneas.
+            </p>
+            <p>
+                Também desenvolvemos peças exclusivas a partir dos desejos de cada cliente.
+            </p>
             	
-            <div class="social">
+            <!-- <div class="social">
             	<ul class="social-icons">
                 	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
                     <li><a href="#"><i class="font-icon-social-email"></i></a></li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <!-- End Profile -->
-        
+        <div class="span3"></div>
         <!-- Start Profile -->
-    	<div class="span4 profile">
+    	<!-- <div class="span4 profile">
         	<div class="image-wrap">
                 <div class="hover-wrap">
                     <span class="overlay-img"></span>
@@ -297,7 +467,7 @@
                     <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <!-- End Profile -->
         
     </div>
@@ -315,7 +485,7 @@
         <div class="span12">
             <div class="title-page">
                 <h2 class="title">Contato</h2>
-                <h3 class="title-description">Envie seu pedido, sujestão, duvida e entraremos em contato.</h3>
+                <h3 class="title-description">Envie seu pedido, sujestões, dúvidas e entraremos em contato.</h3>
             </div>
         </div>
     </div>
@@ -356,7 +526,7 @@
                     <li><a href="#">contato@susanaribacki.com.br</a></li>
                     <li>(54) 9109-2084</li>
                     <li>
-                        Ateliê Susana Ribacki
+                        Atelier Susana Ribacki
                         <br>
                         Av. Júlio de Castilhos, 1021
                         <br>
@@ -395,7 +565,8 @@
             <div class="span12">
                 <nav id="social">
                     <ul>
-                        <li><a href="https://www.facebook.com/susana.ribacki" title="Siga-me no Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <li><a href="https://www.facebook.com/susanaribackiatelier" title="Siga-me no Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
+                        <!-- <li><a href="http://instagram.com/susanaribacki/" title="Siga-me no Instagram" target="_blank"><span class="font-icon-social-facebook"></span></a></li> -->
                         <!-- <li><a href="https://twitter.com/Bluxart" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
                         <li><a href="http://dribbble.com/Bluxart" title="Follow Me on Dribbble" target="_blank"><span class="font-icon-social-dribbble"></span></a></li>
                         <li><a href="http://forrst.com/people/Bluxart" title="Follow Me on Forrst" target="_blank"><span class="font-icon-social-forrst"></span></a></li>
