@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['susanaribacki.com.br', 'www.susanaribacki.com.br']
 
 
 # Application definition
