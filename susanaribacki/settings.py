@@ -20,11 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'a%o3t$iq&6u-#r_6htyp!&%*w4z-3j!5$@ppli%sj38lv9$r4@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = False#True
 
-ALLOWED_HOSTS = ['www.susanaribaki.com.br','susanaribacki.com.br']
+ALLOWED_HOSTS = ['www.susanaribacki.com.br','susanaribacki.com.br']
 
 
 # Application definition
@@ -66,6 +66,12 @@ DATABASES = {
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
+
+EMAIL_HOST = 'smtp.webfaction.com'
+EMAIL_HOST_USER = 'contato'
+EMAIL_HOST_PASSWORD = 'ph8#7hr3S'
+DEFAULT_FROM_EMAIL = 'contato_site@susanaribacki.com.br'
+SERVER_EMAIL = 'contato_site@susanaribacki.com.br'
 
 LANGUAGE_CODE = 'en-us'
 
