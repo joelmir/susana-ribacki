@@ -68,6 +68,7 @@
 <script src="{% static 'core/js/modernizr.js' %}"></script>
 
 <!-- Analytics -->
+<!-- 
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -81,6 +82,7 @@
   })();
 
 </script>
+ -->
 <!-- End Analytics -->
 
 </head>
@@ -496,11 +498,12 @@
     	<div class="span9">
         
         	<form id="contact-form" class="contact-form" action="#">
+                {% csrf_token %}
             	<p class="contact-name">
             		<input id="contact_name" type="text" placeholder="Nome Completo" value="" name="name" />
                 </p>
                 <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email para contato" value="" name="email" />
+                	<input id="contact_email" type="email" placeholder="Email para contato" value="" name="email" />
                 </p>
                 <p class="contact-phone">
                     <input id="contact_phone" type="text" placeholder="Telefone para contato" value="" name="phone" />
