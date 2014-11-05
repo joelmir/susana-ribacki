@@ -67,14 +67,15 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.webfaction.com'
-EMAIL_PORT = 495
+EMAIL_PORT = 587
 EMAIL_HOST_USER = 'contato_site'
 EMAIL_HOST_PASSWORD = 'ph8#7hr3S'
-#EMAIL_USE_TLS = True
-EMAIL_USE_SSL = True
+
 DEFAULT_FROM_EMAIL = 'contato_site@susanaribacki.com.br'
-SERVER_EMAIL = 'contato_site@susanaribacki.com.br'
+SERVER_EMAIL = ['atendimento@susanaribacki.com.br','contato_site@susanaribacki.com.br']
 
 
 LANGUAGE_CODE = 'en-us'

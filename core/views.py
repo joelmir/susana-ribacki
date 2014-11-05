@@ -13,12 +13,19 @@ def home(request):
 
 def contact(request):
   message = request.POST.get('message')
-  print 'phone: ', request.POST.get('phone')
-  print 'message: ',request.POST.get('message')
-  print 'name: ',request.POST.get('name')
-  print 'email: ',request.POST.get('email')
+  phone = request.POST.get('phone')
+  message = request.POST.get('message')
+  name = request.POST.get('name')
+  email = request.POST.get('email')
+
+  content = '''
+  Nome: {name}
+  Telefone: {phone}
+  Email: {email}
+  Mensagem: {message}
+  '''.format(name=name, phone=phone, email=email, message=message)
   
-  send_mail('Contato Site',message, settings.DEFAULT_FROM_EMAIL,
-    [settings.SERVER_EMAIL], fail_silently=False)
+  send_mail('Contato Site',content, settings.DEFAULT_FROM_EMAIL,
+    settings.SERVER_EMAIL, fail_silently=False)
 
   return HttpResponse(json.dumps('Email Enviado com sucesso'), content_type="application/json")

@@ -493,6 +493,12 @@
     <!-- Contact Form -->
     <div class="row">
     	<div class="span9">
+            <div class="alert alert-success email_success" role="alert" style="display:none">
+                <strong>: ) </strong>Seu email foi enviado com sucesso!
+            </div>
+            <div class="alert alert-danger email_error" role="alert" style="display:none">
+                <strong>: ( </strong>Seu email não foi enviado, verifique os dados do formulário
+            </div>
         
         	<form id="contact-form" class="contact-form" action="#">
                 {% csrf_token %}
@@ -508,14 +514,21 @@
                 <p class="contact-message">
                 	<textarea id="contact_message" placeholder="Sua Mensagem" name="message" rows="15" cols="40"></textarea>
                 </p>
+                <div class="alert alert-success email_success" role="alert" style="display:none">
+                    <strong>: ) </strong>Seu email foi enviado com sucesso!
+                </div>
+                <div class="alert alert-danger email_error" role="alert" style="display:none">
+                    <strong>: ( </strong>Seu email não foi enviado, verifique os dados do formulário
+                </div>
                 <p class="contact-submit">
                 	<a id="contact-submit" class="submit" href="#">Envie sua mensagem :)</a>
                 </p>
-                
-                <div id="response">
-                
+                <div class="alert alert-warning email_validation" role="alert" style="display:none">
+                    <strong>; ) </strong>Verifique se todos os campos estão preenchidos
                 </div>
+                
             </form>
+            
          
         </div>
         
@@ -523,7 +536,7 @@
         	<div class="contact-details">
         		<h3>Detalhes do contato</h3>
                 <ul>
-                    <li><a href="#">contato@susanaribacki.com.br</a></li>
+                    <li><a href="#">atendimento@susanaribacki.com.br</a></li>
                     <li>(54) 9109-2084</li>
                     <li>
                         Atelier Susana Ribacki

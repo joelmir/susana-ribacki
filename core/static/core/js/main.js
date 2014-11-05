@@ -203,22 +203,39 @@ BRUSHED.contactForm = function(){
 		$contact_form = $('#contact-form');
 		
 		var fields = $contact_form.serialize();
-		
-		$.ajax({
-			type: "POST",
-			url: "contact/",
-			data: fields,
-			dataType: 'json',
-			success: function(response) {
-				
-				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
+
+		if($('#contact_name').val() && $('#contact_email').val() && $('#contact_phone').val() && $('#contact_message').val()){
+
+			$.ajax({
+				type: "POST",
+				url: "contact/",
+				data: fields,
+				dataType: 'json',
+				success: function(response) {
+					
+					if(response.status){
+						$('#contact-form input').val('');
+						$('#contact-form textarea').val('');
+					}
+					$('.email_success').show();
+					setTimeout(function() {
+							$('.email_success').hide();
+					}, 5000);
+					
+				},
+				error: function(response){
+					$('.email_error').show();
+					setTimeout(function() {
+							$('.email_error').hide();
+					}, 5000);
 				}
-				
-				$('#response').empty().html(response.html);
-			}
-		});
+			});
+		}else{
+			$('.email_validation').show();
+			setTimeout(function() {
+					$('.email_validation').hide();
+			}, 5000);
+		}
 		return false;
 	});
 }
