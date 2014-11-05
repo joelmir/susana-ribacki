@@ -213,10 +213,11 @@ BRUSHED.contactForm = function(){
 				dataType: 'json',
 				success: function(response) {
 					
-					if(response.status){
-						$('#contact-form input').val('');
-						$('#contact-form textarea').val('');
-					}
+					$('#contact_name').val('');
+					$('#contact_email').val('');
+					$('#contact_phone').val('');
+					$('#contact_message').val('');
+
 					$('.email_success').show();
 					setTimeout(function() {
 							$('.email_success').hide();

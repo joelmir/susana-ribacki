@@ -14,11 +14,11 @@ def home(request):
   return render(request, 'core/index.html')
 
 def contact(request):
-  message = request.POST.get('message')
-  phone = request.POST.get('phone')
-  message = request.POST.get('message')
-  name = request.POST.get('name')
-  email = request.POST.get('email')
+  message = request.POST.get('message').encode('utf-8')
+  phone = request.POST.get('phone').encode('utf-8')
+  message = request.POST.get('message').encode('utf-8')
+  name = request.POST.get('name').encode('utf-8')
+  email = request.POST.get('email').encode('utf-8')
 
   content = '''
   Nome: {name}
