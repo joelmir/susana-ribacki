@@ -171,7 +171,10 @@ BRUSHED.fancyBox = function(){
 					this.title = '<h4>' + this.title + '</h4>' + '<p>' + $(this.element).parent().find('img').attr('alt') + '</p>';
 					//Adiciona a galeria de imagens do produto
 					// if($(this.element).parent().children('div.popup-gallery'))
-					// 	this.title += '<div class="popup-gallery">' + $(this.element).parent().children('div.popup-gallery').html()+'</div>'
+					// 	this.title += '<div class="popup-gallery">' + $(this.element).parent().crmhildren('div.popup-gallery').html()+'</div>'
+
+					//Adiciona informações adicionais do produto
+					this.title += '<div>' + $(this.element).parent().children('div.info-product-hide').html()+'</div>'
 
 				},
 				afterShow: function(){
