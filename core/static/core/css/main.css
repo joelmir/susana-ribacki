@@ -629,21 +629,21 @@ nav#menu #menu-nav li a:hover {
 
 .page {
 	background: #2F3238;
-	padding: 100px 0;
+	padding: 50px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .page-alternate {
 	background: #26292E;
-	padding: 100px 0;
+	padding: 50px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .title-page {
 	text-align: center;
-	margin-bottom: 100px;	
+	margin-bottom: 50px;	
 }
 
 .title-page .title {

@@ -153,26 +153,40 @@
         
         <!-- Portfolio Projects -->
         <div class="row">
-        	<div class="span2" style="display:None">
-            	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">Categorias</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">Todos</a></li>
-                        <li><a href="#filter" data-option-value=".design">Design</a></li>
-                        <li><a href="#filter" data-option-value=".photography">Fotografia</a></li>
-                        <li><a href="#filter" data-option-value=".video">Video</a></li>
-                    </ul>
-                </nav>
-                <!-- End Filter -->
-            </div>
+            {% if categories %}
+            	<div class="span2">
+                	<!-- Filter -->
+                    <nav id="options" class="work-nav">
+                        <ul id="filters" class="option-set" data-option-key="filter">
+                        	<li class="type-work">Categorias</li>
+                            {% for category in categories %}
+                                <li><a href="#filter" data-option-value=".category-{{category.pk}}" class="{% ifequal forloop.counter0 0 %}selected{% endifequal %} category">{{category.name}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    <!-- End Filter -->
+                </div>
+            {% endif %}
             
-            <div class="span12">
+            <div class="span{% if categories %}10{% else %}12{% endif %}">
             	<div class="row">
                 	<section id="projects">
                     	<ul id="thumbs">
-
-                            <li class="item-thumbs span2 design">
+                            {% for product in products %}
+                                <li class="item-thumbs span2 {{ product.categories_str }}" style="display:{% if not product.is_featured %}none{% endif %};">
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{product.name}}" href='{{product.image}}'>
+                                        <span class="overlay-img"></span>
+                                        <span class="overlay-img-thumb font-icon-plus"></span>
+                                    </a>
+                                    <img src='{{product.tumb}}' alt="{{product.description}}">
+                                    <div class='info-product-hide'>
+                                        Tamanho: {{product.size}}
+                                        <br>
+                                        Valor: R${{product.price}}
+                                    </div>
+                                </li>
+                            {% endfor %}
+                            <!-- <li class="item-thumbs span2 category-2 secundary" style="display:none;">
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blazer" href="{% static 'core/produtos/0050.png' %}">
                                     <span class="overlay-img"></span>
                                     <span class="overlay-img-thumb font-icon-plus"></span>
@@ -183,8 +197,8 @@
                                     <br>
                                     Valor:   R$120,00
                                 </div>
-                            </li>
-
+                            </li> -->
+<!-- 
                             <li class="item-thumbs span2 design">
                                 <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Blazer" href="{% static 'core/produtos/0051.png' %}">
                                     <span class="overlay-img"></span>
@@ -958,7 +972,7 @@
                                     Valor: R$79,90
                                 </div>
                             </li>
-
+ -->
 
 
 							<!-- Item Project and Filter Name -->

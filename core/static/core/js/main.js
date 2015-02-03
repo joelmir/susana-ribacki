@@ -445,10 +445,20 @@ $(document).ready(function(){
 	BRUSHED.accordion();
 	BRUSHED.toggle();
 	BRUSHED.toolTip();
+
+	$('.category').on('click', function(e){
+		$('.secundary').each(function( index, element ){
+			if($(element).css("display") === 'none'){
+				$(element).css("display", '');
+			}
+			console.log($(element).css("display"));
+		});
+	});
+
 });
 
-$(window).resize(function(){
-	BRUSHED.mobileNav();
-});
+	$(window).resize(function(){
+		BRUSHED.mobileNav();
+	});
 
 });

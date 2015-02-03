@@ -6,12 +6,17 @@ import json
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.conf import settings
+from core.models import Category, Product
 
 # Create your views here.
 
 def home(request):
   # return render(request, 'core/em_breve.html')
-  return render(request, 'core/index.html')
+
+  categories = Category.objects.filter(active=True)
+  products = Product.objects.filter(active=True)
+
+  return render(request, 'core/index.html', {'categories':categories, 'products':products})
 
 def contact(request):
   message = request.POST.get('message').encode('utf-8')
