@@ -56,3 +56,6 @@ class Banner(models.Model):
     class Meta:
         ordering = ["ranking", "description"]
         verbose_name_plural = "Banners"
+
+    def __unicode__(self):
+        return u'{0}-{1}'.format(self.ranking, self.description )
