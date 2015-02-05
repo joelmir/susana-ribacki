@@ -81,11 +81,16 @@
 </script>
 
 <!-- End Analytics -->
-
 </head>
 
 
 <body>
+
+<div style="display:none">
+    {% for banner in banners %}
+        <span data-image=' {{ MEDIA_URL }}{{ banner.image }}' data-description='{{banner.description}}' class='banner-slide'></span>
+    {% endfor %}
+</div>
 
 <!-- This section is for Splash Screen -->
 <div class="ole">
@@ -174,11 +179,11 @@
                     	<ul id="thumbs">
                             {% for product in products %}
                                 <li class="item-thumbs span2 {{ product.categories_str }}" style="display:{% if not product.is_featured %}none{% endif %};">
-                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{product.name}}" href='{{product.image}}'>
+                                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{product.name}}" href=' {{ MEDIA_URL }}{{product.image}}'>
                                         <span class="overlay-img"></span>
                                         <span class="overlay-img-thumb font-icon-plus"></span>
                                     </a>
-                                    <img src='{{product.tumb}}' alt="{{product.description}}">
+                                    <img src=' {{ MEDIA_URL }}{{product.tumb}}' alt="{{product.description}}">
                                     <div class='info-product-hide'>
                                         Tamanho: {{product.size}}
                                         <br>

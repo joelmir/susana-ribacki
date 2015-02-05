@@ -47,6 +47,14 @@ BRUSHED.listenerMenu = function(){
 ================================================== */
 
 BRUSHED.slider = function(){
+	list_of_slides = []
+	$('.banner-slide').each(function(idx, banner){
+		list_of_slides.push(
+			{ image : $(banner).data('image'), 
+			  title : '<div class="slide-content">'+ $(banner).data('description')+'</div>', thumb : '', url : ''}
+			)
+	});
+
 	$.supersized({
 		// Functionality
 		slideshow               :   1,			// Slideshow on/off
@@ -76,16 +84,7 @@ BRUSHED.slider = function(){
 		slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
-		slides 					:  	[			// Slideshow Images
-											{image : 'static/core/img/slider-images/image01.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : 'static/core/img/slider-images/image02.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : 'static/core/img/slider-images/image03.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : 'static/core/img/slider-images/image04.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},  
-											{image : 'static/core/img/slider-images/image05.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},  
-											{image : 'static/core/img/slider-images/image06.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''},
-											{image : 'static/core/img/slider-images/image07.jpg', title : '<div class="slide-content"></div>', thumb : '', url : ''} 
-									],
-									
+		slides 					:  	list_of_slides,			// Slideshow Images
 		// Theme Options			   
 		progress_bar			:	0,			// Timer for each slide							
 		mouse_scrub				:	0

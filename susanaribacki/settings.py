@@ -61,7 +61,7 @@ WSGI_APPLICATION = 'susanaribacki.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db4.sqlite3'),
     }
 }
 
@@ -99,6 +99,6 @@ STATIC_ROOT = "/home/joelmir/webapps/susanaribacki_static"
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = "/home/joelmir/webapps/susanaribacki/core/media"
+MEDIA_ROOT = "/home/joelmir/webapps/susanaribacki_media"
 
 #MEDIA_ROOT = "/home/joelmir/git/sites/django1.7/susanaribacki/core/media"

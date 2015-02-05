@@ -18,7 +18,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=500, verbose_name='Nome do produto')
-    Description = models.TextField(verbose_name='Descrição do produto', null=True, blank=True)
+    description = models.TextField(verbose_name='Descrição do produto', null=True, blank=True)
     size = models.CharField(max_length=200, verbose_name='Tamanhos do produto')
     price = models.CharField(max_length=200, verbose_name='Preço do produto')
     active = models.BooleanField(verbose_name='Produto ativo/inativo', default=True)
@@ -26,8 +26,8 @@ class Product(models.Model):
     categories = models.ManyToManyField(Category, verbose_name='Categorias que o produto faz parte')
 
     #Imagens do produto
-    tumb = models.ImageField(upload_to = 'media/products/tumb/', default ='media/products/tumb/default.png')
-    image = models.ImageField(upload_to = 'media/products/images/', default ='media/products/images/default.png')
+    tumb = models.ImageField(upload_to = 'products/tumb/', default ='products/tumb/default.png')
+    image = models.ImageField(upload_to = 'products/images/', default ='products/images/default.png')
 
     class Meta:
         ordering = ["ranking", "name"]
@@ -47,3 +47,12 @@ class Product(models.Model):
             return True
         return category in self.categories.all()
 
+class Banner(models.Model):
+    description = models.TextField(verbose_name='Descrição do banner', null=True, blank=True)
+    ranking = models.IntegerField(verbose_name='Ordenação do banenr', default=0)
+    image = models.ImageField(upload_to = 'banner/', default ='banner/default.png')
+    active = models.BooleanField(verbose_name='Banner ativo/inativo', default=True)
+
+    class Meta:
+        ordering = ["ranking", "description"]
+        verbose_name_plural = "Banners"
