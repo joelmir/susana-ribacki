@@ -34,7 +34,7 @@ class Product(models.Model):
         verbose_name_plural = "Produtos"
 
     def __unicode__(self):
-        return self.name
+        return u'{0}-{1}'.format(str(self.pk).zfill(6), self.name)
 
     def categories_str(self):
         return ' '.join(['category-{0}'.format(category.pk) for category in self.categories.all()])
@@ -46,6 +46,9 @@ class Product(models.Model):
             #Caso nenhuma categoria estiver ativa, exibe todos os produtos cadastrados
             return True
         return category in self.categories.all()
+
+    def code(self):
+        return str(self.pk).zfill(6)
 
 class Banner(models.Model):
     description = models.TextField(verbose_name='Descrição do banner', null=True, blank=True)
