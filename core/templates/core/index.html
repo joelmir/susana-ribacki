@@ -178,7 +178,7 @@
                 	<section id="projects">
                     	<ul id="thumbs">
                             {% for product in products %}
-                                <li class="item-thumbs span2 {{ product.categories_str }}" style="display:{% if not product.is_featured %}none{% endif %};">
+                                <li class="item-thumbs span2 {{ product.categories_str }}{% if not product.is_featured %} secundary{% endif %}" style="display:{% if not product.is_featured %}none{% endif %};">
                                     <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="{{product.name}}" href=' {{ MEDIA_URL }}{{product.image}}'>
                                         <span class="overlay-img"></span>
                                         <span class="overlay-img-thumb font-icon-plus"></span>
